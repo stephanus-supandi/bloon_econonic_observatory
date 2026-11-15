@@ -34,6 +34,6 @@
 - Verified the three BEO raw snapshots against the source repository by Git blob SHA.
 - Added a Python standard-library ingestion/normalization script with pinned source SHA checks.
 - Generated 180 normalized source-observation rows in a separate CSV; these are not unique-business counts.
-- Added explicit category crosswalk; 37 rows remain `UNK-UNK` for review.
+- Added explicit category crosswalk; 54 rows remain `UNK-UNK` for review, including ambiguous/provisional source categories.
 - Preserved source row identity, source blob SHA, raw date/status labels, and row-level source links.
 - Avoided automatic `OBSERVED` or open-status promotion; unknown dates and ambiguous categories remain unresolved.
