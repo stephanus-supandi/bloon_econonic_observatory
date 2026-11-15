@@ -61,3 +61,14 @@ These are proposed fields for future normalized tables. They do not imply that t
 - `occupancy_status`: `occupied_observed`, `apparently_vacant`, `renovation_observed`, `demolished_observed`, `inaccessible`, `unknown`.
 
 A platform label, star rating, review count, or opening-hours field is not a verification status. A proposed field is not evidence that it has been populated or verified.
+
+## GSV normalized CSV additional fields
+
+| Field | Meaning |
+|---|---|
+| observation_date_raw | Original date/capture label; retained when it cannot be converted to an exact ISO date |
+| rating_raw / review_count_raw / price_range_raw / opening_hours_raw | Source values preserved as text; not treated as current values |
+| operational_status_raw / verification_status_raw | Original source status wording |
+| mapping_status | `mapped_explicit` or `unmapped_review_required` |
+
+The generated CSV contains 180 source-observation rows, not a unique-business registry. Source categories outside the explicit crosswalk are assigned `UNK-UNK` pending review.
