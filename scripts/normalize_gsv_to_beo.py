@@ -55,36 +55,26 @@ CATEGORY_MAP = {
     "toko ayam / makanan": "RET-GRO",
     "toko baju / clothing store": "RET-SPE",
     "toko baju / distro": "RET-SPE",
-    "toko ban / suku cadang motor (kategori perlu cek)": "AUT-TIR",
     "toko bangunan": "PRP-MAT",
-    "toko bangunan/cat (dugaan; kategori perlu cek)": "PRP-MAT",
     "toko bayi": "RET-SPE",
     "toko bayi dan perlengkapan anak": "RET-SPE",
     "toko beras": "RET-GRO",
     "toko busana pengantin / muslimah": "RET-SPE",
     "toko cat / bahan bangunan": "PRP-MAT",
-    "toko cat / bahan bangunan (dugaan)": "PRP-MAT",
     "toko handphone": "RET-SPE",
     "toko kue / bakery": "FNB-BAK",
-    "toko pakaian / denim (dugaan)": "RET-SPE",
-    "toko susu / distributor": "RET-GRO",
     "warteg / rumah makan": "FNB-RES",
     "celluler": "RET-SPE",
-    "finansial": "FIN-OTH",
     "finansial_gadai": "FIN-PWN",
-    "furnitur": "RET-SPE",
     "groseri": "RET-GRO",
     "grosir_hasil_bumi": "RET-WHO",
     "gym": "PER-FIT",
     "hotel": "HOS-ACC",
-    "jasa": "PRO-BIZ",
     "jasa_barber": "PER-BAR",
     "jasa_copy": "PRO-BIZ",
-    "jasa_otomotif": "AUT-WRK",
     "kesehatan": "HLT-CLI",
     "klinik": "HLT-CLI",
     "konter": "RET-SPE",
-    "mall": "HOS-REC",
     "material bangunan": "PRP-MAT",
     "material_bangunan": "PRP-MAT",
     "optik": "HLT-PHA",
@@ -167,7 +157,7 @@ def normalize_file(filename: str, expected_sha: str) -> list[dict[str, str]]:
             verification_raw = first(source, "status_verifikasi") if galaxy else ""
             duplicate_raw = first(source, "penanda_duplikat") if galaxy else ""
             category_raw = first(source, "kategori")
-            code = CATEGORY_MAP.get(category_raw.casefold(), "UNK-UNK")
+            code = "UNK-UNK" if any(flag in category_raw.casefold() for flag in ("dugaan", "perlu cek", "perlu konfirmasi")) else CATEGORY_MAP.get(category_raw.casefold(), "UNK-UNK")
             notes = " | ".join(filter(None, (
                 first(source, "catatan_visual_dan_konteks"),
                 first(source, "sumber_data"), first(source, "catatan_verifikasi")
