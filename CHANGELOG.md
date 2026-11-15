@@ -28,3 +28,4 @@
 - Added distinct pin-location status values and vacancy/renovation/change-of-use observations.
 - Clarified that 2003–present is a research window, not evidence of continuous historical coverage.
 - No historical tenant timeline, current occupancy, revenue, or profitability is asserted by this documentation update.
+\n## 2026-11-16 — GSV normalization pipeline\n\n- Verified the three BEO raw snapshots against the source repository by Git blob SHA.\n- Added a Python standard-library ingestion/normalization script with pinned source SHA checks.\n- Generated 180 normalized source-observation rows in a separate CSV; these are not unique-business counts.\n- Added explicit category crosswalk; 37 rows remain `UNK-UNK` for review.\n- Preserved source row identity, source blob SHA, raw date/status labels, and row-level source links.\n- Avoided automatic `OBSERVED` or open-status promotion; unknown dates and ambiguous categories remain unresolved.\n
