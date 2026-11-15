@@ -34,7 +34,7 @@ The initial data lineage is:
 │   ├── raw/
 │   ├── taxonomy/
 │   │   └── business_category_taxonomy.csv
-│   └── normalized/
+│   └── normalized/\n│       ├── gsv_normalized_observations.csv\n│       └── gsv_normalization_report.md
 ├── docs/
 │   ├── DATA_DICTIONARY.md
 │   ├── METHODOLOGY.md
@@ -97,7 +97,7 @@ Do not infer coordinates from street names, nearby pins, sequence numbers, or vi
 
 The first import preserves existing survey material covering Blok M, Ancol, Taman Galaxy, and Kranji. The initial project focus can expand geographically only when new observations and provenance are supplied.
 
-## Planned workflow
+## GSV ingestion and normalization\n\nRun from the BEO repository root with Python 3.10+ (standard library only):\n\n\`\`\`powershell\npython scripts/normalize_gsv_to_beo.py\n\`\`\`\n\nThe script checks the three frozen source Git blob SHAs before producing the normalized CSV. It uses an explicit category crosswalk, preserves source row IDs and raw date/status labels, and leaves ambiguous categories as `UNK-UNK`. See [normalization report](data/normalized/gsv_normalization_report.md).\n\n## Planned workflow
 
 1. Preserve raw GSV source snapshots.
 2. Validate file structure and source provenance.
