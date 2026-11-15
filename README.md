@@ -7,7 +7,7 @@ A data-first observatory derived from the field-survey discipline of [BLOON GSV 
 
 ## Purpose
 
-BLOON Economic Observatory (BEO) organizes observed business and service locations into a consistent local-economic taxonomy. It starts from the existing GSV survey records, preserves their provenance, and adds a controlled classification layer for retail, food and beverage, automotive, logistics, health, education, property, professional services, infrastructure, and other activities.
+BLOON Economic Observatory (BEO) organizes observed business and service locations into a consistent local-economic taxonomy. It starts from the existing GSV survey records, preserves their provenance, and adds a controlled classification layer for retail, food and beverage, automotive, logistics, manufacturing and industry, health, education, property, professional services, infrastructure, and other activities.
 
 This repository is a research dataset and methodology scaffold, not a census, business registry, legal property map, or proof of commercial activity.
 
@@ -52,6 +52,8 @@ The initial data lineage is:
 | Food & beverage | restaurant, warung, cafe, bakery, catering |
 | Automotive & mobility | workshop, tire shop, detailing, fuel retail, rental |
 | Logistics & supply chain | courier, postal, freight, drop point, warehouse, fulfillment, distribution, cold chain |
+| Manufacturing & industry | food processing, textiles, chemicals, plastics, metals, machinery, electronics, automotive assembly, recycling |
+| Industrial areas & support | industrial estates, shared utilities, industrial maintenance, testing and calibration |
 | Personal services | barber, salon, laundry, fitness, repair |
 | Health & care | clinic, doctor, pharmacy, laboratory, veterinary |
 | Education | school, tutoring, course, music studio |
