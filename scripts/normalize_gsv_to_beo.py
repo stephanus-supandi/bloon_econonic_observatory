@@ -129,7 +129,8 @@ FIELDS = [
 ]
 
 def git_blob_sha(content: bytes) -> str:
-    return hashlib.sha1(f"blob {len(content)}\\0".encode("ascii") + content).hexdigest()
+    header = b"blob " + str(len(content)).encode("ascii") + bytes([0])
+    return hashlib.sha1(header + content).hexdigest()
 
 def first(row: dict[str, str], *keys: str) -> str:
     for key in keys:
