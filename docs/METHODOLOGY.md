@@ -35,6 +35,10 @@ Use `data/taxonomy/business_category_taxonomy.csv`. Store both `category_raw` an
 
 Brand and business model are separate dimensions. A familiar brand does not prove the outlet is company-owned or franchised. Record `chain` only when chain affiliation is supported; record `franchise` only when the franchise relationship is evidenced.
 
+### Manufacturing and industrial facilities
+
+Use the manufacturing codes only when production, processing, assembly, or material recovery is supported by direct observation or reliable source evidence. A warehouse, showroom, distributor, workshop, or construction site is not automatically a factory. Record the observable product/process where known; otherwise use `MFG-GEN` only when manufacturing activity itself is established. Map an industrial estate/park as a separate geographic/organizational feature from each tenant facility. Do not assume every address inside an industrial estate is a factory, and do not infer production capacity, workforce, output, pollution level, permits, or operating status from a map pin or building appearance.
+
 ## 6. Spatial rules
 
 - Never infer latitude/longitude from house-number sequences, nearby pins, street-name similarity, or adjacency alone.
