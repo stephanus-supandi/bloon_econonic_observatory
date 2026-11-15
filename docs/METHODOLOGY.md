@@ -35,6 +35,23 @@ Use `data/taxonomy/business_category_taxonomy.csv`. Store both `category_raw` an
 
 Brand and business model are separate dimensions. A familiar brand does not prove the outlet is company-owned or franchised. Record `chain` only when chain affiliation is supported; record `franchise` only when the franchise relationship is evidenced.
 
+### Financial services and institutions
+
+Classify the type of service point or institution that is actually evidenced: commercial bank branch, BPR/BPRS, ATM/CRM, bank agent, cooperative, microfinance, leasing/multifinance, insurer, insurance intermediary, pawn outlet, remittance, money changer, payment service, capital-market office, or digital-finance service.
+
+Keep these distinctions explicit:
+
+- A bank branch, ATM, and bank agent are different observation types.
+- A vehicle showroom/dealer is not automatically a leasing or finance company.
+- An insurance agent/broker is not the insurance underwriter.
+- A payment counter or PPOB outlet is not automatically a bank.
+- A pawn outlet should not be described as an official Pegadaian branch unless its identity is supported.
+- A fintech app or digital lender may operate without a physical local office; do not invent a storefront.
+- A cooperative or microfinance institution is not automatically a bank.
+- Do not infer licensing, deposit protection, solvency, loan rates, customer balances, assets, transaction volume, or regulatory status from a sign, map listing, or storefront.
+
+Record the observed service point and the institution/provider separately when evidence allows. Where the exact financial activity is unclear, retain `UNKNOWN` rather than guessing.
+
 ### Manufacturing and industrial facilities
 
 Use the manufacturing codes only when production, processing, assembly, or material recovery is supported by direct observation or reliable source evidence. A warehouse, showroom, distributor, workshop, or construction site is not automatically a factory. Record the observable product/process where known; otherwise use `MFG-GEN` only when manufacturing activity itself is established. Map an industrial estate/park as a separate geographic/organizational feature from each tenant facility. Do not assume every address inside an industrial estate is a factory, and do not infer production capacity, workforce, output, pollution level, permits, or operating status from a map pin or building appearance.
