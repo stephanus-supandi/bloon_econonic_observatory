@@ -29,6 +29,8 @@ The initial data lineage is:
 .
 ├── README.md
 ├── CHANGELOG.md
+├── scripts/
+│   └── normalize_gsv_to_beo.py
 ├── data/
 │   ├── README.md
 │   ├── raw/
@@ -132,7 +134,7 @@ The script checks the three frozen source Git blob SHAs before producing the nor
 
 ## Status
 
-**v0.1 — foundation scaffold and source-data import, with expanded taxonomy and commercial-area research method.** No live business verification, automated map scraping, historical census, or financial estimation is claimed.
+**v0.1 — foundation scaffold, frozen GSV source import, first normalized observation dataset, and commercial-area research method.** The normalization pipeline is committed; no live business verification, automated map scraping, historical census, or financial estimation is claimed.
 
 ## Citation
 
