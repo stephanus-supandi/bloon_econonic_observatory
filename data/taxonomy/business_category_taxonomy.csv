@@ -64,3 +64,20 @@ MFG-REC,MANUFACTURING_INDUSTRY,Recycling & material recovery,recycling_plant;was
 IND-EST,INDUSTRIAL_AREAS,Industrial estate & industrial park,kawasan_industri;industrial_estate;industrial_park,Map the estate boundary separately from tenant factories
 IND-WHS,INDUSTRIAL_AREAS,Industrial support facility,industrial_utility;shared_wastewater;industrial_gas;power_substation,Only classify facilities with evidence of industrial role
 IND-SVC,INDUSTRIAL_AREAS,Industrial services,industrial_maintenance;calibration;testing;industrial_safety;equipment_rental,Service provider is not automatically a manufacturer
+FIN-COM,FINANCIAL_SERVICES,Commercial bank,bank_branch;commercial_bank;corporate_banking,Separate branch from ATM and agent
+FIN-BPR,FINANCIAL_SERVICES,Rural bank,BPR;BPRS;bank_perekonomian_rakyat;sharia_rural_bank,Record stated institution type;do not infer from sign abbreviation alone
+FIN-ATM,FINANCIAL_SERVICES,ATM & cash service,ATM;CRM;cash_deposit_machine,ATM is a service point not a separate bank
+FIN-AGT,FINANCIAL_SERVICES,Bank agent & branchless banking,bank_agent;agen_laku_pandai;cash_in_cash_out,Record provider and service if visible
+FIN-COO,FINANCIAL_SERVICES,Cooperative finance,savings_cooperative;credit_union;koperasi_simpan_pinjam,Do not assume cooperative is licensed as a bank
+FIN-MFI,FINANCIAL_SERVICES,Microfinance & community lending,microfinance;microcredit;group_lending,Record provider and evidence;avoid assumptions about loan terms
+FIN-LEA,FINANCIAL_SERVICES,Leasing & multifinance,vehicle_financing;equipment_financing;consumer_finance,Distinguish financing company from vehicle dealer
+FIN-FAK,FINANCIAL_SERVICES,Factoring & business finance,factoring;invoice_finance;working_capital_finance,Only classify specific service when supported
+FIN-INS-L,FINANCIAL_SERVICES,Life insurance,life_insurance;health_life_cover,Separate insurer from insurance agent
+FIN-INS-G,FINANCIAL_SERVICES,General insurance,general_insurance;property_insurance;motor_insurance,Separate insurer from insurance agent
+FIN-INS-B,FINANCIAL_SERVICES,Insurance intermediary,insurance_agent;insurance_broker;agency,Do not classify an agency as the insurer
+FIN-PWN,FINANCIAL_SERVICES,Pawn & secured lending,pegadaian;pawnshop;gold_collateral_loan,Distinguish official outlet from independent pawn service
+FIN-REM,FINANCIAL_SERVICES,Remittance & money changer,remittance;money_transfer;foreign_exchange;money_changer,Record transfer service vs currency exchange separately where possible
+FIN-PAY,FINANCIAL_SERVICES,Payment services,e_wallet;payment_gateway;PPOB;bill_payment;merchant_acquirer,Brand/app does not prove a physical branch
+FIN-CAP,FINANCIAL_SERVICES,Capital market services,securities_broker;stock_broker;investment_manager;mutual_fund_sales,Record office/service presence; do not infer investment advice quality
+FIN-P2P,FINANCIAL_SERVICES,Digital lending & fintech,digital_lending;P2P_lending;fintech_lending;BNPL,Digital-only service may have no local storefront
+FIN-OTH,FINANCIAL_SERVICES,Other financial institution,financial_service_office;financial_administration,Use only when financial activity is evident but narrower type is unknown
