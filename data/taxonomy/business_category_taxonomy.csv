@@ -1,0 +1,47 @@
+category_code,domain,category,subcategory,examples,notes
+RET-MIN,RETAIL_TRADE,Minimarket,chain_store,Alfamart;Indomaret;Alfamidi;Lawson;FamilyMart,Brand is a separate attribute
+RET-GRO,RETAIL_TRADE,Grocery,traditional_grocery,warung;sembako;beras;telur,Do not assume wholesale unless observed
+RET-SPE,RETAIL_TRADE,Specialty retail,clothing;phone;electronics;hardware;building_materials,Use the narrowest supported subcategory
+RET-WHO,RETAIL_TRADE,Wholesale,food_wholesale;agricultural_supply;general_wholesale,Wholesale claim requires evidence
+FNB-RES,FOOD_BEVERAGE,Restaurant,restaurant;warung_makan;food_stall,Menu/type can be unknown
+FNB-CAF,FOOD_BEVERAGE,Cafe & beverage,cafe;coffee;tea;juice;beverage,Do not infer franchise status from branding alone
+FNB-BAK,FOOD_BEVERAGE,Bakery & snacks,bakery;cake;snack;martabak,
+FNB-CAT,FOOD_BEVERAGE,Catering,catering;meal_prep;home_kitchen,
+AUT-WRK,AUTOMOTIVE_MOBILITY,Workshop,car_workshop;motorcycle_workshop;specialist_repair,
+AUT-TIR,AUTOMOTIVE_MOBILITY,Tires & wheels,tire_shop;puncture_repair;alignment,
+AUT-DET,AUTOMOTIVE_MOBILITY,Vehicle care,car_wash;detailing;coating,
+AUT-PAR,AUTOMOTIVE_MOBILITY,Parts & accessories,spare_parts;accessories,
+AUT-FUE,AUTOMOTIVE_MOBILITY,Fuel retail,licensed_fuel_station;retail_fuel_seller;LPG,Do not imply licensing or fuel type unless verified
+AUT-REN,AUTOMOTIVE_MOBILITY,Vehicle rental,rental_car;rental_motorcycle,
+LOG-COU,LOGISTICS_SUPPLY_CHAIN,Courier,parcel_courier;express_delivery,JNE;J&T;SiCepat;TIKI;AnterAja;Ninja;SPX;Lion Parcel;Paxel
+LOG-POS,LOGISTICS_SUPPLY_CHAIN,Postal,post_office;postal_agent,Pos Indonesia
+LOG-DRO,LOGISTICS_SUPPLY_CHAIN,Drop-off & pickup,drop_point;pickup_point;parcel_locker,Distinguish agent outlet from hub
+LOG-FRT,LOGISTICS_SUPPLY_CHAIN,Freight forwarding,domestic_freight;international_freight;air_cargo;sea_cargo,Service claim may be signage-only
+LOG-WHS,LOGISTICS_SUPPLY_CHAIN,Warehouse,warehouse;distribution_warehouse;cold_storage,Do not infer capacity or occupancy
+LOG-FUL,LOGISTICS_SUPPLY_CHAIN,Fulfillment,fulfillment_center;sortation_center;cross_dock,Back-end facilities may not be visible from public road
+LOG-TRN,LOGISTICS_SUPPLY_CHAIN,Goods transport,truck_transport;moving;heavy_equipment_transport,
+LOG-COL,LOGISTICS_SUPPLY_CHAIN,Specialized logistics,cold_chain;pharma_logistics;reverse_logistics,Record stated service and source
+PER-BAR,PERSONAL_SERVICES,Barber & salon,barbershop;hair_salon;beauty_salon,
+PER-LAU,PERSONAL_SERVICES,Laundry,laundry_kiloan;dry_cleaning;shoe_laundry,
+PER-FIT,PERSONAL_SERVICES,Fitness & wellness,gym;fitness;yoga;pilates;massage,
+PER-REP,PERSONAL_SERVICES,Repair services,phone_repair;computer_repair;appliance_repair,
+HLT-CLI,HEALTH_CARE,Clinic & practice,clinic;doctor;dentist;physiotherapy,
+HLT-PHA,HEALTH_CARE,Pharmacy & medical retail,pharmacy;medical_supply;optical,
+HLT-LAB,HEALTH_CARE,Diagnostics,laboratory;medical_testing,
+HLT-VET,HEALTH_CARE,Veterinary,vet_clinic;pet_health,
+EDU-SCH,EDUCATION,School,paud;kindergarten;primary;secondary;higher_education,
+EDU-CRS,EDUCATION,Courses & tutoring,tutoring;language;music;computer;driving,
+FIN-BNK,FINANCE_ADMIN,Banking,bank;ATM,
+FIN-PAY,FINANCE_ADMIN,Payments & transfer,PPOB;money_transfer;bill_payment,
+FIN-INS,FINANCE_ADMIN,Insurance & pawn,insurance;pawn;cooperative,
+PRP-REA,PROPERTY_CONSTRUCTION,Property services,property_agent;developer;property_marketing,
+PRP-BLD,PROPERTY_CONSTRUCTION,Construction services,contractor;architect;engineering_consultant;renovation,
+PRP-MAT,PROPERTY_CONSTRUCTION,Building materials,paint;steel;cement;ceramic;glass;aluminium,
+PRP-HOM,PROPERTY_CONSTRUCTION,Home services,plumbing;electrical;cleaning;septic;water_refill;gardening,
+PRO-LEG,PROFESSIONAL_SERVICES,Legal & corporate,notary;lawyer;accountant;tax_consultant,
+PRO-BIZ,PROFESSIONAL_SERVICES,Business services,printing;photocopy;design;consulting;travel_agent,
+HOS-ACC,HOSPITALITY_RECREATION,Accommodation,hotel;guesthouse;homestay,
+HOS-REC,HOSPITALITY_RECREATION,Recreation,sports_venue;playground;karaoke;cinema;event_venue,
+PUB-COM,PUBLIC_COMMUNITY,Community & public facility,place_of_worship;community_center;public_park;public_service,
+INF-UTL,INFRASTRUCTURE_UTILITIES,Utilities & infrastructure,telecom;water;energy;fuel_station;parking,
+UNK-UNK,UNKNOWN_UNRESOLVED,Unresolved,unknown;unclassified,Use when evidence does not support a narrower classification
