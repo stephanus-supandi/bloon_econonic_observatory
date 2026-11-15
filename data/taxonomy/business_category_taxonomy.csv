@@ -81,3 +81,13 @@ FIN-PAY,FINANCIAL_SERVICES,Payment services,e_wallet;payment_gateway;PPOB;bill_p
 FIN-CAP,FINANCIAL_SERVICES,Capital market services,securities_broker;stock_broker;investment_manager;mutual_fund_sales,Record office/service presence; do not infer investment advice quality
 FIN-P2P,FINANCIAL_SERVICES,Digital lending & fintech,digital_lending;P2P_lending;fintech_lending;BNPL,Digital-only service may have no local storefront
 FIN-OTH,FINANCIAL_SERVICES,Other financial institution,financial_service_office;financial_administration,Use only when financial activity is evident but narrower type is unknown
+
+MED-VID,CREATIVE_MEDIA_PRODUCTION,Video production,video_production;videography;film_production;commercial_video,Use when production activity is supported; do not infer from a personal channel
+MED-EDT,CREATIVE_MEDIA_PRODUCTION,Editing & post-production,video_editing;post_production;color_grading;motion_graphics,Editing service is distinct from a production house
+MED-POD,CREATIVE_MEDIA_PRODUCTION,Podcast studio,podcast_studio;podcast_room;podcast_recording,May be a rental room rather than a production company
+MED-AUD,CREATIVE_MEDIA_PRODUCTION,Audio recording & production,recording_studio;voice_over;audio_mixing;mastering,Record audio service evidenced
+MED-LIV,CREATIVE_MEDIA_PRODUCTION,Livestream & broadcast,livestream;live_streaming;webcast;broadcast_studio,Do not infer audience or monetization
+MED-STU,CREATIVE_MEDIA_PRODUCTION,Creator & multipurpose studio,creator_studio;photo_video_studio;green_screen;studio_rental,Distinguish facility rental from in-house production
+MED-EQP,CREATIVE_MEDIA_PRODUCTION,Production equipment rental,camera_rental;lighting_rental;audio_equipment_rental,Visible equipment alone does not prove rental service
+MED-AGY,CREATIVE_MEDIA_PRODUCTION,Creator & media agency,content_agency;influencer_agency;talent_management;social_media_agency,Do not infer representation or client roster without evidence
+MED-EDU,CREATIVE_MEDIA_PRODUCTION,Creator education & classes,video_course;editing_class;podcast_training;content_creation_class,Class activity may be periodic rather than continuous
