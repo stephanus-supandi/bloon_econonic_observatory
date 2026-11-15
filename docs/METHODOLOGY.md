@@ -130,6 +130,6 @@ Counts must state:
 
 Keep source repository, path, blob SHA, row number, and observation date where available. Do not redistribute Google Street View imagery. Store factual notes and lawful references rather than copied imagery.
 
-## 11. Reproducibility
+## 11. GSV normalization pipeline\n\nThe current pipeline reads only the three frozen CSV snapshots in `data/raw/`. It verifies each file against a pinned Git blob SHA before transformation. It uses Python's standard library (`csv`, `hashlib`, `pathlib`) and an explicit raw-category crosswalk. Unknown or ambiguous categories map to `UNK-UNK` with `unmapped_review_required`; they are not guessed. Source row IDs, row numbers, blob SHAs, raw date/status labels, and source-row links are retained.\n\nThe generated 180 rows represent source records, not distinct businesses. The pipeline does not infer exact dates from month/year labels, does not set all rows to `OBSERVED`, and does not infer current operating status. Rebuild with `python scripts/normalize_gsv_to_beo.py` from the repository root.\n\n## 12. Reproducibility
 
 Every transformation should be repeatable and documented. Raw source snapshots are immutable; corrections belong in a new normalized or correction layer with a reason and provenance.
