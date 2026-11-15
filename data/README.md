@@ -2,12 +2,12 @@
 
 - `raw/` contains byte-for-byte UTF-8 text snapshots fetched from BLOON GSV Archaeology on the import date. Do not edit these files in place.
 - `taxonomy/` contains BEO's controlled business-category vocabulary.
-- `normalized/` is reserved for derived observation/entity tables. No normalized business census is claimed in v0.1.
+- `normalized/` contains derived observation rows and reports. The current GSV normalization is a source-row transformation, not a normalized business census or distinct-business count.
 
 Imported source blob SHAs:
 - `BLOON_MAP_Taman_Galaxy_master.csv`: `be24e04943794dfbf92064ba4c7a9fd4cbb94a37`
 - `survey_log.csv`: `a66cfa46aac4cc1973247f357184bac75c5e7de6`
 - `kranji_master_41_poi.csv`: `86e3253ecb07cb6e469968e5cb2a38d8ce92153c`
 
-Source repository: https://github.com/stephanus-supandi/bloon_gsv_survey  
+Normalization: run `python scripts/normalize_gsv_to_beo.py` from repository root. The script verifies the pinned Git blob SHAs before reading the raw snapshots.\n\nSource repository: https://github.com/stephanus-supandi/bloon_gsv_survey  
 Source branch: `master`
