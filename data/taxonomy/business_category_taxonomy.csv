@@ -45,3 +45,22 @@ HOS-REC,HOSPITALITY_RECREATION,Recreation,sports_venue;playground;karaoke;cinema
 PUB-COM,PUBLIC_COMMUNITY,Community & public facility,place_of_worship;community_center;public_park;public_service,
 INF-UTL,INFRASTRUCTURE_UTILITIES,Utilities & infrastructure,telecom;water;energy;fuel_station;parking,
 UNK-UNK,UNKNOWN_UNRESOLVED,Unresolved,unknown;unclassified,Use when evidence does not support a narrower classification
+MFG-GEN,MANUFACTURING_INDUSTRY,Manufacturing facility,general_manufacturing;factory;production_plant,Use when production is established but product sector is unknown
+MFG-FOD,MANUFACTURING_INDUSTRY,Food processing,food_processing;meat_processing;dairy;grain_milling;snack_factory,Distinguish manufacturing from restaurant or retail
+MFG-BEV,MANUFACTURING_INDUSTRY,Beverage production,bottling;beverage_plant;drinking_water_production,
+MFG-TEX,MANUFACTURING_INDUSTRY,Textile & apparel,textile_mill;garment;knitting;dyeing;sewing_factory,
+MFG-LEA,MANUFACTURING_INDUSTRY,Leather & footwear,tannery;leather_goods;footwear_factory,
+MFG-WOD,MANUFACTURING_INDUSTRY,Wood & furniture,sawmill;wood_processing;furniture_factory;carpentry_production,
+MFG-PAP,MANUFACTURING_INDUSTRY,Paper & printing,paper_mill;packaging;carton;printing_plant,
+MFG-CHE,MANUFACTURING_INDUSTRY,Chemicals & materials,chemical_plant;paint;detergent;cosmetics;fertilizer,
+MFG-PHA,MANUFACTURING_INDUSTRY,Pharmaceuticals & medical products,pharmaceutical_plant;medical_devices;medical_supplies,
+MFG-RUB,MANUFACTURING_INDUSTRY,Rubber & plastics,rubber_processing;plastic_molding;plastic_packaging;injection_molding,
+MFG-MIN,MANUFACTURING_INDUSTRY,Non-metallic minerals,cement;ceramics;glass;stone;concrete_products,
+MFG-MET,MANUFACTURING_INDUSTRY,Basic metals & metal products,steel_mill;foundry;smelter;metal_fabrication;metal_finishing,
+MFG-MAC,MANUFACTURING_INDUSTRY,Machinery & equipment,machinery;industrial_equipment;machine_shop;tooling,
+MFG-ELC,MANUFACTURING_INDUSTRY,Electronics & electrical,electronics_assembly;electrical_equipment;cable;component_factory,
+MFG-AUT,MANUFACTURING_INDUSTRY,Automotive & transport equipment,vehicle_assembly;automotive_parts;shipbuilding;rail_equipment,
+MFG-REC,MANUFACTURING_INDUSTRY,Recycling & material recovery,recycling_plant;waste_processing;material_recovery,Distinguish industrial processing from a collection point
+IND-EST,INDUSTRIAL_AREAS,Industrial estate & industrial park,kawasan_industri;industrial_estate;industrial_park,Map the estate boundary separately from tenant factories
+IND-WHS,INDUSTRIAL_AREAS,Industrial support facility,industrial_utility;shared_wastewater;industrial_gas;power_substation,Only classify facilities with evidence of industrial role
+IND-SVC,INDUSTRIAL_AREAS,Industrial services,industrial_maintenance;calibration;testing;industrial_safety;equipment_rental,Service provider is not automatically a manufacturer
