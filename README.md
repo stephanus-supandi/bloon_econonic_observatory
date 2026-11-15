@@ -57,7 +57,8 @@ The initial data lineage is:
 | Personal services | barber, salon, laundry, fitness, repair |
 | Health & care | clinic, doctor, pharmacy, laboratory, veterinary |
 | Education | school, tutoring, course, music studio |
-| Finance & administration | bank, ATM, pawn, money transfer, insurance |
+| Financial services | commercial banks, BPR/BPRS, ATMs, bank agents, cooperatives, microfinance, leasing, multifinance, insurance, pawnshops, remittance, money changers, payment services, capital markets, fintech |
+| Finance & administration | payment counters, bill payment and administrative services (retain only where not better classified as a financial service) |
 | Property & construction | property agent, contractor, building materials, home services |
 | Professional services | legal, notary, accounting, consulting |
 | Hospitality & recreation | hotel, lodging, sports venue, entertainment |
