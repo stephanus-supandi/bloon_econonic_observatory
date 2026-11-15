@@ -9,5 +9,7 @@ Imported source blob SHAs:
 - `survey_log.csv`: `a66cfa46aac4cc1973247f357184bac75c5e7de6`
 - `kranji_master_41_poi.csv`: `86e3253ecb07cb6e469968e5cb2a38d8ce92153c`
 
-Normalization: run `python scripts/normalize_gsv_to_beo.py` from repository root. The script verifies the pinned Git blob SHAs before reading the raw snapshots.\n\nSource repository: https://github.com/stephanus-supandi/bloon_gsv_survey  
+Normalization: run `python scripts/normalize_gsv_to_beo.py` from repository root. The script verifies the pinned Git blob SHAs before reading the raw snapshots.
+
+Source repository: https://github.com/stephanus-supandi/bloon_gsv_survey  
 Source branch: `master`
