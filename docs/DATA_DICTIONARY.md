@@ -30,11 +30,34 @@ Keep the original source fields intact. Normalized BEO fields are additional int
 | duplicate_status | string | unique, possible_duplicate, confirmed_duplicate, unresolved |
 | notes | string | Explicit limitations and context |
 
+## Commercial-area and time-series fields (proposed)
+
+| Field | Type | Meaning |
+|---|---|---|
+| physical_unit_id | string | Stable ID for a physical shop-house unit/site; not a business ID |
+| area_id | string | Stable ID for a named commercial area or survey zone |
+| unit_label_raw | string/null | Door/unit label exactly as observed; never infer from neighbors |
+| business_entity_id | string/null | Stable entity ID only when identity is supported |
+| map_listing_id | string/null | Platform listing identifier, if lawfully recorded |
+| pin_latitude / pin_longitude | number/null | Coordinates supplied by the map source; keep separate from verified site coordinates |
+| pin_status | enum | PIN_MATCH, PIN_OFFSET, PIN_WRONG_LOCATION, PIN_DUPLICATE, PIN_NO_PHYSICAL_EVIDENCE, PIN_UNRESOLVED, PIN_NOT_CHECKED |
+| occupancy_status | enum | occupied_observed, apparently_vacant, renovation_observed, demolished_observed, inaccessible, unknown |
+| valid_from / valid_to | date/null | Supported interval boundaries; leave null when unknown |
+| observed_at | date/time/null | Date the observation was made |
+| source_published_at | date/time/null | Publication date of the source, distinct from the event date |
+| renovation_status | enum | not_observed, renovation_observed, reported, unknown |
+| use_change_status | enum | no_change_observed, change_observed, reported, unknown |
+| confidence_note | string | Plain-language evidence limitations; not a fabricated numeric confidence |
+
+These are proposed fields for future normalized tables. They do not imply that the corresponding data have already been collected.
+
 ## Controlled values
 
 - `business_model`: `independent`, `chain`, `franchise`, `cooperative`, `public`, `unknown`.
 - `operational_status`: `open_observed`, `closed_observed`, `reported_closed`, `unknown`, `not_checked`.
 - `verification_status`: `observed`, `partially_verified`, `verified`, `unresolved`, `not_checked`.
 - `duplicate_status`: `unique`, `possible_duplicate`, `confirmed_duplicate`, `unresolved`.
+- `pin_status`: `PIN_MATCH`, `PIN_OFFSET`, `PIN_WRONG_LOCATION`, `PIN_DUPLICATE`, `PIN_NO_PHYSICAL_EVIDENCE`, `PIN_UNRESOLVED`, `PIN_NOT_CHECKED`.
+- `occupancy_status`: `occupied_observed`, `apparently_vacant`, `renovation_observed`, `demolished_observed`, `inaccessible`, `unknown`.
 
-A platform label, star rating, review count, or opening-hours field is not a verification status.
+A platform label, star rating, review count, or opening-hours field is not a verification status. A proposed field is not evidence that it has been populated or verified.
